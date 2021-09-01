@@ -31,6 +31,27 @@
           },
           "deprecated": false
         }
+      },
+      "/healthz": {
+        "get": {
+          "tags": ["Health"],
+          "summary": "getHealthz",
+          "description": "Get API Health",
+          "operationId": "getHealthz",
+          "responses": {
+            "200": {
+              "description": "Result",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/DataResponse"
+                  }
+                }
+              }
+            }
+          },
+          "deprecated": false
+        }
       }
     },
     "components": {
